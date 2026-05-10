@@ -1,0 +1,13 @@
+Documento explicativo del portafolio
+
+Objetivo del portafolio:
+Presentar mi perfil profesional, formación académica, habilidades técnicas, proyectos desarrollados e información de contacto en una página web organizada y responsive.
+
+Tecnologías utilizadas:
+HTML5 para la estructura de la página, CSS3 para el diseño visual y JavaScript para las funciones interactivas, como los botones de audio y las animaciones básicas.
+
+Dificultades encontradas:
+Una de las principales dificultades fue organizar correctamente las secciones del portafolio y lograr que el diseño se adaptara a diferentes tamaños de pantalla.
+
+Conclusiones:
+El desarrollo del portafolio permitió aplicar conocimientos de HTML, CSS y JavaScript, además de fortalecer habilidades en organización de código, diseño responsive y publicación de proyectos en GitHub.
