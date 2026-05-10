@@ -2,6 +2,9 @@
 
 Este proyecto contiene un portafolio web básico realizado con HTML, CSS y JavaScript.
 
+Vinculo para visualizarlo
+https://jpesjp.github.io/PORTAFOLIO/#inicio
+
 ## Estructura
 
 - `index.html`: página principal.
