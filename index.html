@@ -4,534 +4,658 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portafolio Profesional</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
     }
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-      overflow-x: hidden;
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#0f172a;
+      color:#e5e7eb;
+      overflow-x:hidden;
     }
 
-    header {
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 1000;
-      background: rgba(15, 23, 42, 0.85);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+    header{
+      position:fixed;
+      width:100%;
+      top:0;
+      z-index:1000;
+      background:rgba(15,23,42,.85);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(255,255,255,.08);
     }
 
-    nav {
-      max-width: 1200px;
-      margin: auto;
-      padding: 18px 25px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    nav{
+      max-width:1200px;
+      margin:auto;
+      padding:18px 25px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
     }
 
-    .logo {
-      font-size: 24px;
-      font-weight: 800;
-      background: linear-gradient(135deg, #38bdf8, #a78bfa);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .logo{
+      font-size:24px;
+      font-weight:800;
+      background:linear-gradient(135deg,#38bdf8,#a78bfa);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
     }
 
-    .menu {
-      display: flex;
-      gap: 22px;
-      list-style: none;
+    .menu{
+      display:flex;
+      gap:22px;
+      list-style:none;
     }
 
-    .menu a {
-      color: #e5e7eb;
-      text-decoration: none;
-      font-weight: 500;
-      transition: 0.3s;
+    .menu a{
+      color:#e5e7eb;
+      text-decoration:none;
+      font-weight:500;
+      transition:.3s;
     }
 
-    .menu a:hover {
-      color: #38bdf8;
+    .menu a:hover{
+      color:#38bdf8;
     }
 
-    .hero {
-      min-height: 100vh;
-      padding: 120px 25px 60px;
-      display: grid;
-      place-items: center;
+    .hero{
+      min-height:100vh;
+      padding:120px 25px 60px;
+      display:grid;
+      place-items:center;
       background:
-        radial-gradient(circle at top left, rgba(56,189,248,0.25), transparent 35%),
-        radial-gradient(circle at bottom right, rgba(167,139,250,0.25), transparent 35%);
+      radial-gradient(circle at top left,rgba(56,189,248,.25),transparent 35%),
+      radial-gradient(circle at bottom right,rgba(167,139,250,.25),transparent 35%);
     }
 
-    .hero-content {
-      max-width: 1200px;
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 50px;
-      align-items: center;
+    .hero-content{
+      max-width:1200px;
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:50px;
+      align-items:center;
     }
 
-    .tag {
-      display: inline-block;
-      padding: 8px 16px;
-      background: rgba(56,189,248,0.12);
-      border: 1px solid rgba(56,189,248,0.35);
-      border-radius: 999px;
-      color: #7dd3fc;
-      margin-bottom: 18px;
-      font-size: 14px;
+    .tag{
+      display:inline-block;
+      padding:8px 16px;
+      background:rgba(56,189,248,.12);
+      border:1px solid rgba(56,189,248,.35);
+      border-radius:999px;
+      color:#7dd3fc;
+      margin-bottom:18px;
+      font-size:14px;
     }
 
-    .hero h1 {
-      font-size: clamp(42px, 7vw, 78px);
-      line-height: 1.05;
-      margin-bottom: 22px;
+    .hero h1{
+      font-size:clamp(42px,7vw,78px);
+      line-height:1.05;
+      margin-bottom:22px;
     }
 
-    .hero h1 span {
-      background: linear-gradient(135deg, #38bdf8, #a78bfa);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .hero h1 span{
+      background:linear-gradient(135deg,#38bdf8,#a78bfa);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
     }
 
-    .hero p {
-      font-size: 18px;
-      color: #cbd5e1;
-      margin-bottom: 30px;
-      max-width: 650px;
+    .hero p{
+      font-size:18px;
+      color:#cbd5e1;
+      margin-bottom:30px;
+      max-width:650px;
     }
 
-    .btns {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
+    .btns{
+      display:flex;
+      gap:15px;
+      flex-wrap:wrap;
     }
 
-    .btn {
-      padding: 14px 24px;
-      border-radius: 14px;
-      text-decoration: none;
-      font-weight: 700;
-      transition: 0.3s;
+    .btn{
+      padding:14px 24px;
+      border-radius:14px;
+      text-decoration:none;
+      font-weight:700;
+      transition:.3s;
+      display:inline-block;
+      margin-top:10px;
     }
 
-    .btn-primary {
-      background: linear-gradient(135deg, #38bdf8, #6366f1);
-      color: white;
-      box-shadow: 0 15px 30px rgba(56,189,248,0.25);
+    .btn-primary{
+      background:linear-gradient(135deg,#38bdf8,#6366f1);
+      color:white;
+      box-shadow:0 15px 30px rgba(56,189,248,.25);
     }
 
-    .btn-secondary {
-      border: 1px solid rgba(255,255,255,0.18);
-      color: #e5e7eb;
+    .btn-secondary{
+      border:1px solid rgba(255,255,255,.18);
+      color:#e5e7eb;
     }
 
-    .btn:hover {
-      transform: translateY(-4px);
+    .btn:hover{
+      transform:translateY(-4px);
     }
 
-    .profile-card {
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.14);
-      border-radius: 30px;
-      padding: 28px;
-      box-shadow: 0 30px 80px rgba(0,0,0,0.35);
-      text-align: center;
-      animation: float 4s ease-in-out infinite;
+    .profile-card{
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:30px;
+      padding:28px;
+      box-shadow:0 30px 80px rgba(0,0,0,.35);
+      text-align:center;
+      animation:float 4s ease-in-out infinite;
     }
 
-    .profile-card img {
-      width: 230px;
-      height: 230px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 5px solid rgba(56,189,248,0.7);
-      margin-bottom: 20px;
+    .profile-card img{
+      width:230px;
+      height:230px;
+      object-fit:cover;
+      border-radius:50%;
+      border:5px solid rgba(56,189,248,.7);
+      margin-bottom:20px;
     }
 
-    .profile-card h2 {
-      font-size: 26px;
-      margin-bottom: 8px;
+    .profile-card h2{
+      font-size:26px;
+      margin-bottom:8px;
     }
 
-    .profile-card p {
-      color: #94a3b8;
-      margin-bottom: 0;
+    .profile-card p{
+      color:#94a3b8;
     }
 
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-14px); }
+    @keyframes float{
+      0%,100%{transform:translateY(0);}
+      50%{transform:translateY(-14px);}
     }
 
-    section {
-      max-width: 1200px;
-      margin: auto;
-      padding: 90px 25px;
+    section{
+      max-width:1200px;
+      margin:auto;
+      padding:90px 25px;
     }
 
-    .section-title {
-      font-size: 38px;
-      margin-bottom: 16px;
-      text-align: center;
+    .section-title{
+      font-size:38px;
+      margin-bottom:16px;
+      text-align:center;
     }
 
-    .section-subtitle {
-      text-align: center;
-      color: #94a3b8;
-      margin-bottom: 45px;
+    .section-subtitle{
+      text-align:center;
+      color:#94a3b8;
+      margin-bottom:45px;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
     }
 
-    .card {
-      background: rgba(255,255,255,0.07);
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 24px;
-      padding: 26px;
-      transition: 0.35s;
+    .card{
+      background:rgba(255,255,255,.07);
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:24px;
+      padding:26px;
+      transition:.35s;
     }
 
-    .card:hover {
-      transform: translateY(-10px);
-      border-color: rgba(56,189,248,0.55);
-      box-shadow: 0 25px 55px rgba(0,0,0,0.28);
+    .card:hover{
+      transform:translateY(-10px);
+      border-color:rgba(56,189,248,.55);
+      box-shadow:0 25px 55px rgba(0,0,0,.28);
     }
 
-    .card h3 {
-      color: #38bdf8;
-      margin-bottom: 12px;
+    .card h3{
+      color:#38bdf8;
+      margin-bottom:12px;
     }
 
-    .card p, .card li {
-      color: #cbd5e1;
+    .card p,.card li{
+      color:#cbd5e1;
     }
 
-    .card ul {
-      padding-left: 20px;
+    .card ul{
+      padding-left:20px;
     }
 
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      justify-content: center;
+    .skills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      justify-content:center;
     }
 
-    .skill {
-      padding: 10px 16px;
-      background: rgba(56,189,248,0.12);
-      border: 1px solid rgba(56,189,248,0.25);
-      border-radius: 999px;
-      color: #bae6fd;
-      font-weight: 600;
+    .skill{
+      padding:10px 16px;
+      background:rgba(56,189,248,.12);
+      border:1px solid rgba(56,189,248,.25);
+      border-radius:999px;
+      color:#bae6fd;
+      font-weight:600;
     }
 
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 28px;
+    .projects{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:28px;
     }
 
-    .project {
-      overflow: hidden;
-      padding: 0;
+    .project{
+      overflow:hidden;
+      padding:0;
     }
 
-    .project img {
-      width: 100%;
-      height: 240px;
-      object-fit: cover;
-      display: block;
+    .project img{
+      width:100%;
+      height:240px;
+      object-fit:cover;
+      display:block;
     }
 
-    .project-content {
-      padding: 24px;
+    .project-content{
+      padding:24px;
     }
 
-    .audio-box {
-      max-width: 650px;
-      margin: auto;
-      text-align: center;
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.14);
-      border-radius: 26px;
-      padding: 35px;
+    .audio-box{
+      max-width:650px;
+      margin:auto;
+      text-align:center;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:26px;
+      padding:35px;
     }
 
-    .audio-buttons {
-      margin-top: 25px;
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
+    .audio-buttons{
+      margin-top:25px;
+      display:flex;
+      justify-content:center;
+      gap:16px;
+      flex-wrap:wrap;
     }
 
-    button {
-      border: none;
-      cursor: pointer;
-      padding: 14px 26px;
-      border-radius: 14px;
-      font-weight: 800;
-      color: white;
-      background: linear-gradient(135deg, #38bdf8, #6366f1);
-      transition: 0.3s;
+    button{
+      border:none;
+      cursor:pointer;
+      padding:14px 26px;
+      border-radius:14px;
+      font-weight:800;
+      color:white;
+      background:linear-gradient(135deg,#38bdf8,#6366f1);
+      transition:.3s;
     }
 
-    button:hover {
-      transform: scale(1.06);
+    button:hover{
+      transform:scale(1.06);
     }
 
-    .contact {
-      text-align: center;
+    .contact{
+      text-align:center;
     }
 
-    .contact-info {
-      display: flex;
-      justify-content: center;
-      gap: 18px;
-      flex-wrap: wrap;
-      margin-top: 25px;
+    .contact-info{
+      display:flex;
+      justify-content:center;
+      gap:18px;
+      flex-wrap:wrap;
+      margin-top:25px;
     }
 
-    .contact-info a {
-      color: #e5e7eb;
-      text-decoration: none;
-      padding: 14px 20px;
-      border-radius: 14px;
-      background: rgba(255,255,255,0.07);
-      border: 1px solid rgba(255,255,255,0.12);
+    .contact-info a{
+      color:#e5e7eb;
+      text-decoration:none;
+      padding:14px 20px;
+      border-radius:14px;
+      background:rgba(255,255,255,.07);
+      border:1px solid rgba(255,255,255,.12);
     }
 
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #94a3b8;
-      border-top: 1px solid rgba(255,255,255,0.08);
+    footer{
+      text-align:center;
+      padding:30px;
+      color:#94a3b8;
+      border-top:1px solid rgba(255,255,255,.08);
     }
 
-    .reveal {
-      opacity: 0;
-      transform: translateY(35px);
-      transition: 0.8s ease;
+    .reveal{
+      opacity:0;
+      transform:translateY(35px);
+      transition:.8s ease;
     }
 
-    .reveal.active {
-      opacity: 1;
-      transform: translateY(0);
+    .reveal.active{
+      opacity:1;
+      transform:translateY(0);
     }
 
-    @media (max-width: 900px) {
+    @media (max-width:900px){
+
       .hero-content,
       .grid,
-      .projects {
-        grid-template-columns: 1fr;
+      .projects{
+        grid-template-columns:1fr;
       }
 
-      .menu {
-        display: none;
+      .menu{
+        display:none;
       }
 
-      .hero {
-        text-align: center;
+      .hero{
+        text-align:center;
       }
 
-      .btns {
-        justify-content: center;
+      .btns{
+        justify-content:center;
       }
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <nav>
-      <div class="logo">Mi Portafolio</div>
-      <ul class="menu">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#academica">Académica</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#audio">Audio</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+
+<header>
+  <nav>
+    <div class="logo">Mi Portafolio</div>
+
+    <ul class="menu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#academica">Académica</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#audio">Audio</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section id="inicio" class="hero">
+
+  <div class="hero-content">
+
+    <div class="reveal">
+      <span class="tag">Estudiante de Ingeniería de Software</span>
+
+      <h1>Hola, soy <span>Juan Pablo</span></h1>
+
+      <p>
+        Soy una persona apasionada por la tecnología, el desarrollo web y la creación de soluciones digitales modernas.
+        Este portafolio presenta mi formación, habilidades, proyectos y objetivos profesionales.
+      </p>
+
+      <div class="btns">
+        <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+        <a href="#contacto" class="btn btn-secondary">Contactarme</a>
+      </div>
+    </div>
+
+    <div class="profile-card reveal">
+      <img src="img/Avatar.png" alt="Avatar profesional">
+      <h2>Juan Pablo Rojas Fernandez</h2>
+      <p>Desarrollador web en formación</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="academica">
+
+  <h2 class="section-title reveal">Formación Académica</h2>
+
+  <p class="section-subtitle reveal">
+    Mi preparación, cursos y conocimientos técnicos.
+  </p>
+
+  <div class="grid">
+
+    <div class="card reveal">
+      <h3>Formación</h3>
+      <p>Estudiante de Ingeniería de Software.</p>
+    </div>
+
+    <div class="card reveal">
+      <h3>Cursos y certificaciones</h3>
+
+      <ul>
+        <li>Enterprise Design Thinking Practitioner - IBM SkillsBuild</li>
+        <li>Introduction to Cybersecurity - Cisco Networking Academy</li>
       </ul>
-    </nav>
-  </header>
+    </div>
 
-  <main>
-    <section id="inicio" class="hero">
-      <div class="hero-content">
-        <div class="reveal">
-          <span class="tag">Estudiante de Ingeniería de Software</span>
-          <h1>Hola, soy <span>Tu Nombre</span></h1>
-          <p>
-            Soy una persona apasionada por la tecnología, el desarrollo web y la creación de soluciones digitales modernas.
-            Este portafolio presenta mi formación, habilidades, proyectos y objetivos profesionales.
-          </p>
-          <div class="btns">
-            <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
-            <a href="#contacto" class="btn btn-secondary">Contactarme</a>
-          </div>
-        </div>
+    <div class="card reveal">
+      <h3>Objetivo Profesional</h3>
 
-        <div class="profile-card reveal">
-          <img src="img/Avatar.png" alt="Avatar profesional">
-          <h2>Tu Nombre Completo</h2>
-          <p>Desarrollador web en formación</p>
-        </div>
+      <p>
+        Desarrollar soluciones web funcionales, aprender nuevas tecnologías
+        y crecer como profesional en el área de software.
+      </p>
+    </div>
+
+  </div>
+
+  <br><br>
+
+  <h3 class="section-subtitle reveal">
+    Lenguajes de programación conocidos:
+  </h3>
+
+  <div class="skills reveal">
+    <span class="skill">HTML5</span>
+    <span class="skill">CSS3</span>
+    <span class="skill">JavaScript</span>
+    <span class="skill">Python</span>
+    <span class="skill">C#</span>
+    <span class="skill">SQL Server</span>
+    <span class="skill">GitHub</span>
+    <span class="skill">Responsive Design</span>
+  </div>
+
+</section>
+
+<section id="proyectos">
+
+  <h2 class="section-title reveal">Proyectos</h2>
+
+  <p class="section-subtitle reveal">
+    Algunos trabajos académicos y personales.
+  </p>
+
+  <div class="projects">
+
+    <!-- PROYECTO 1 -->
+
+    <article class="card project reveal">
+
+      <img src="img/proyecto1.png" alt="ERP Concesionario">
+
+      <div class="project-content">
+
+        <h3>Proyecto 1: ERP Concesionario</h3>
+
+        <p>
+          Sistema de gestión empresarial para un concesionario de vehículos,
+          diseñado para centralizar inventario, clientes, ventas,
+          facturación y reportes básicos.
+        </p>
+
+        <p>
+          El sistema utiliza una arquitectura en capas para facilitar
+          escalabilidad, mantenimiento y buenas prácticas de ingeniería de software.
+        </p>
+
+        <p>
+          <strong>Tecnologías:</strong>
+          C#, .NET, Visual Studio 2022, SQL Server, Git, GitHub y Scrum.
+        </p>
+
+        <p>
+          <strong>Estado:</strong>
+          Sprint 0 - configuración estructural y definición técnica.
+        </p>
+
+        <a class="btn btn-secondary"
+        href="https://github.com/Jpesjp/Concesionario-ERP"
+        target="_blank">
+          Ver repositorio
+        </a>
+
       </div>
-    </section>
 
-    <section id="academica">
-      <h2 class="section-title reveal">Formación Académica</h2>
-      <p class="section-subtitle reveal">Mi preparación, cursos y conocimientos técnicos.</p>
+    </article>
 
-      <div class="grid">
+    <!-- PROYECTO 2 -->
 
-        <div class="card reveal">
-          <h3>Formación</h3>
-          <p>Estudiante de Ingeniería de Software.</p>
-        </div>
+    <article class="card project reveal">
 
-        <div class="card reveal">
-          <h3>Cursos y certificaciones</h3>
-          <ul>
-            <li>Enterprise Design Thinking Practitioner - IBM SkillsBuild</li>
-            <li>Introduction to Cybersecurity - Cisco Networking Academy</li>
-          </ul>
-        </div>
+      <img src="img/proyecto2.png" alt="WayTure">
 
-        <div class="card reveal">
-          <h3>Objetivo Profesional</h3>
-          <p>Desarrollar soluciones web funcionales, aprender nuevas tecnologías y crecer como profesional en el área de software.</p>
-        </div>
+      <div class="project-content">
+
+        <h3>Proyecto 2: WayTure</h3>
+
+        <p>
+          Aplicación web para planificación, gestión y rastreo de viajes,
+          con autenticación, panel de usuario, panel administrativo
+          y almacenamiento de datos en Firebase.
+        </p>
+
+        <p>
+          Incluye gestión de viajes, itinerarios, presupuesto,
+          rastreo por código, formularios y administración de usuarios.
+        </p>
+
+        <p>
+          <strong>Tecnologías:</strong>
+          HTML5, CSS3, JavaScript modular,
+          Firebase Authentication, Cloud Firestore,
+          Google Maps Embed y localStorage.
+        </p>
+
+        <a class="btn btn-secondary"
+        href="https://github.com/skizm07/WayTure"
+        target="_blank">
+          Ver repositorio
+        </a>
+
       </div>
 
-      <br><br>
-      <h3 class="section-subtitle reveal">Lenguajes de programación conocidos:</h3>
-      <div class="skills reveal">
-        <span class="skill">HTML5</span>
-        <span class="skill">CSS3</span>
-        <span class="skill">JavaScript</span>
-        <span class="skill">Python</span>
-        <span class="skill">GitHub</span>
-        <span class="skill">Responsive Design</span>
-      </div>
-    </section>
+    </article>
 
-    <section id="proyectos">
-      <h2 class="section-title reveal">Proyectos</h2>
-      <p class="section-subtitle reveal">Algunos trabajos académicos y personales.</p>
+  </div>
 
-      <div class="projects">
-        <article class="card project reveal">
-          <img src="img/proyecto1.png" alt="Captura del proyecto ERP Concesionario">
-          <div class="project-content">
-            <h3>Proyecto 1: ERP Concesionario</h3>
-            <p>
-              Sistema de gestión empresarial para un concesionario de vehículos, desarrollado para centralizar la administración de inventario, clientes, ventas, facturación y reportes básicos.
-            </p>
-            <p>
-              Su objetivo general es diseñar e implementar un ERP básico que permita optimizar los procesos administrativos y comerciales de un concesionario automotriz.
-            </p>
-            <p>
-              El sistema será desarrollado en C# usando herramientas del ecosistema Microsoft, con una arquitectura en capas que facilita la escalabilidad, el mantenimiento y las buenas prácticas de ingeniería de software.
-            </p>
-            <p><strong>Arquitectura:</strong> Presentación, Lógica de Negocio, Acceso a Datos y Base de Datos.</p>
-            <p><strong>Tecnologías:</strong> C#, .NET, Visual Studio 2022, SQL Server, Git, GitHub y Scrum.</p>
-            <p><strong>Estado actual:</strong> Fase inicial - Sprint 0, en configuración estructural y definición técnica.</p>
-            <p><strong>Próximos módulos:</strong> Gestión de clientes, inventario, ventas, reportes básicos y control de usuarios.</p>
-            <a class="btn btn-secondary" href="https://github.com/Jpesjp/Concesionario-ERP" target="_blank">
-              Ver repositorio
-            </a>
-          </div>
-        </article>
+</section>
 
-        <article class="card project reveal">
-          <img src="img/proyecto2.png" alt="Captura del proyecto 2">
-          <div class="project-content">
-            <h3>Proyecto 2: Calculadora Básica</h3>
-            <p>Aplicación sencilla para realizar operaciones matemáticas básicas usando lógica de programación.</p>
-            <p><strong>Tecnologías:</strong> HTML, CSS y JavaScript.</p>
-          </div>
-        </article>
-      </div>
-    </section>
+<section id="audio">
 
-    <section id="audio">
-      <h2 class="section-title reveal">Audio de Presentación</h2>
-      <p class="section-subtitle reveal">Presentación personal grabada para el portafolio.</p>
+  <h2 class="section-title reveal">
+    Audio de Presentación
+  </h2>
 
-      <div class="audio-box reveal">
-        <p>Haz clic para escuchar mi presentación personal.</p>
-        <audio id="miAudio">
-          <source src="audio/presentacion.mp3" type="audio/mpeg">
-          Tu navegador no soporta audio.
-        </audio>
-        <div class="audio-buttons">
-          <button onclick="reproducirAudio()">▶ Reproducir</button>
-          <button onclick="pausarAudio()">⏸ Pausar</button>
-        </div>
-      </div>
-    </section>
+  <p class="section-subtitle reveal">
+    Presentación personal grabada para el portafolio.
+  </p>
 
-    <section id="contacto" class="contact">
-      <h2 class="section-title reveal">Contacto</h2>
-      <p class="section-subtitle reveal">Puedes contactarme por estos medios.</p>
+  <div class="audio-box reveal">
 
-      <div class="contact-info reveal">
-        <a href="mailto:tucorreo@email.com">tucorreo@email.com</a>
-        <a href="tel:+573000000000">300 000 0000</a>
-        <a href="https://github.com/tuusuario" target="_blank">GitHub</a>
-      </div>
-    </section>
-  </main>
+    <p>
+      Haz clic para escuchar mi presentación personal.
+    </p>
 
-  <footer>
-    <p>© 2026 Tu Nombre Completo | Portafolio Profesional</p>
-  </footer>
+    <audio id="miAudio">
+      <source src="audio/presentacion.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>
 
-  <script>
-    const audio = document.getElementById('miAudio');
+    <div class="audio-buttons">
+      <button onclick="reproducirAudio()">▶ Reproducir</button>
+      <button onclick="pausarAudio()">⏸ Pausar</button>
+    </div>
 
-    function reproducirAudio() {
-      audio.play();
+  </div>
+
+</section>
+
+<section id="contacto" class="contact">
+
+  <h2 class="section-title reveal">Contacto</h2>
+
+  <p class="section-subtitle reveal">
+    Puedes contactarme por estos medios.
+  </p>
+
+  <div class="contact-info reveal">
+
+    <a href="mailto:juanpablo@email.com">
+      juanpablo@email.com
+    </a>
+
+    <a href="tel:+573000000000">
+      300 000 0000
+    </a>
+
+    <a href="https://github.com/Jpesjp" target="_blank">
+      GitHub
+    </a>
+
+  </div>
+
+</section>
+
+</main>
+
+<footer>
+  <p>
+    © 2026 Juan Pablo Rojas Fernandez | Portafolio Profesional
+  </p>
+</footer>
+
+<script>
+
+const audio = document.getElementById('miAudio');
+
+function reproducirAudio(){
+  audio.play();
+}
+
+function pausarAudio(){
+  audio.pause();
+}
+
+const elementos = document.querySelectorAll('.reveal');
+
+function mostrarElementos(){
+
+  elementos.forEach((elemento)=>{
+
+    const posicion = elemento.getBoundingClientRect().top;
+    const alturaPantalla = window.innerHeight;
+
+    if(posicion < alturaPantalla - 80){
+      elemento.classList.add('active');
     }
 
-    function pausarAudio() {
-      audio.pause();
-    }
+  });
 
-    const elementos = document.querySelectorAll('.reveal');
+}
 
-    function mostrarElementos() {
-      elementos.forEach((elemento) => {
-        const posicion = elemento.getBoundingClientRect().top;
-        const alturaPantalla = window.innerHeight;
+window.addEventListener('scroll',mostrarElementos);
+window.addEventListener('load',mostrarElementos);
 
-        if (posicion < alturaPantalla - 80) {
-          elemento.classList.add('active');
-        }
-      });
-    }
+</script>
 
-    window.addEventListener('scroll', mostrarElementos);
-    window.addEventListener('load', mostrarElementos);
-  </script>
 </body>
 </html>
