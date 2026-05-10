@@ -1,4 +1,0 @@
-Coloca aquí tu archivo de audio con el nombre: presentacion.mp3
-
-Ejemplo de contenido:
-Hola, mi nombre es [Tu nombre], soy estudiante de Ingeniería de Software y este es mi portafolio profesional.
