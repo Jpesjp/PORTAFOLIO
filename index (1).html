@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portafolio Profesional</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>Mi Portafolio</h1>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#academica">Académica</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#audio">Audio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <img src="img/avatar.svg" alt="Foto o avatar profesional" class="avatar" />
+    <h2>Tu Nombre Completo</h2>
+    <p>Soy estudiante de Ingeniería de Software con interés en el desarrollo web, la programación y la creación de soluciones tecnológicas.</p>
+    <h3>Objetivos profesionales</h3>
+    <p>Mi objetivo es fortalecer mis habilidades en desarrollo web, crear proyectos funcionales y prepararme para trabajar en el sector tecnológico.</p>
+  </section>
+
+  <section id="academica" class="seccion">
+    <h2>Sección Académica</h2>
+    <div class="card">
+      <h3>Formación académica</h3>
+      <p>Estudiante de Ingeniería de Software.</p>
+    </div>
+    <div class="card">
+      <h3>Cursos o certificaciones</h3>
+      <p>Curso básico de HTML, CSS y JavaScript.</p>
+    </div>
+    <div class="card">
+      <h3>Competencias técnicas</h3>
+      <p>Diseño web, lógica de programación, manejo básico de Git y GitHub.</p>
+    </div>
+    <div class="card">
+      <h3>Lenguajes de programación</h3>
+      <p>HTML, CSS, JavaScript y Python.</p>
+    </div>
+  </section>
+
+  <section id="proyectos" class="seccion">
+    <h2>Proyectos</h2>
+    <div class="proyectos">
+      <div class="proyecto">
+        <img src="img/proyecto1.svg" alt="Captura del proyecto 1" />
+        <h3>Proyecto 1: Página web personal</h3>
+        <p>Sitio web creado para presentar información personal, académica y profesional.</p>
+        <p><strong>Tecnologías:</strong> HTML, CSS y JavaScript.</p>
+      </div>
+      <div class="proyecto">
+        <img src="img/proyecto2.svg" alt="Captura del proyecto 2" />
+        <h3>Proyecto 2: Calculadora básica</h3>
+        <p>Aplicación sencilla que permite realizar operaciones matemáticas básicas.</p>
+        <p><strong>Tecnologías:</strong> HTML, CSS y JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="audio" class="seccion">
+    <h2>Audio de presentación</h2>
+    <p>Escucha mi presentación personal:</p>
+    <audio id="miAudio">
+      <source src="audio/presentacion.mp3" type="audio/mpeg" />
+      Tu navegador no soporta audio.
+    </audio>
+    <div class="botones">
+      <button onclick="reproducirAudio()">Reproducir</button>
+      <button onclick="pausarAudio()">Pausar</button>
+    </div>
+    <p class="nota">Reemplaza el archivo audio/presentacion.mp3 por tu audio real.</p>
+  </section>
+
+  <section id="contacto" class="seccion contacto">
+    <h2>Contacto</h2>
+    <p><strong>Email:</strong> tunombre@email.com</p>
+    <p><strong>Teléfono:</strong> 300 000 0000</p>
+    <p><strong>GitHub:</strong> https://github.com/tuusuario</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Tu Nombre Completo - Portafolio Profesional</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
